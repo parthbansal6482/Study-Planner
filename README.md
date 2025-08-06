@@ -1,17 +1,85 @@
-<<<<<<< HEAD
-# Study-Planner
-website for managing tasks along with pomodoro timer.
-=======
-# React + Vite
+# 📚 Study Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, visually appealing productivity app to help you organize your study tasks and stay focused using the Pomodoro technique.  
+Built with React and Tailwind CSS, featuring a beautiful 3D card interface and a clean, minimalist color theme.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Task Management:**  
+  Add, edit, delete, and organize your study tasks in a Kanban-style board (Pending, In Progress, Completed).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 1f1b51b (Initial commit)
+- **Pomodoro Timer:**  
+  Focus on one task at a time with a built-in Pomodoro timer (25/5 minute cycles), including session tracking and notifications.
+
+- **3D Card UI:**  
+  Every box and card features a 3D effect with smooth shadows, gradients, and interactive hover animations.
+
+- **Persistent Storage:**  
+  Your tasks and timer state are saved in your browser (localStorage), so you never lose your progress.
+
+- **Responsive Design:**  
+  Works beautifully on desktop and mobile devices.
+
+---
+
+## 🖥️ Tech Stack
+
+- **Frontend:** React
+- **Styling:** Tailwind CSS (with custom gradients and shadows)
+- **State Management:** React Hooks
+- **Build Tool:** Vite
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/studyplanner.git
+   cd studyplanner
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in your browser:**  
+   Visit [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📸 Screenshots
+
+> _Add screenshots here to showcase the UI and 3D effects!_
+
+---
+
+## 🛠️ Customization
+
+- **Theme:**  
+  Easily adjust colors and shadows in the Tailwind config or component files to match your style.
+
+- **Pomodoro Settings:**  
+  Change work/break durations in `PomodoroTimer.jsx` if you want custom intervals.
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 🙏 Credits
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Pomodoro technique inspiration
