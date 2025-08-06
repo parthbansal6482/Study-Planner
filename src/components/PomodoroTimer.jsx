@@ -132,7 +132,7 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
   };
 
   return (
-    <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl text-center">
+    <div className="bg-gradient-to-br from-white via-amber-50 to-white rounded-xl p-6 shadow-2xl border-2 border-amber-800 text-center transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Pomodoro Timer</h2>
         <button
@@ -149,7 +149,7 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
           <div 
             className="absolute inset-0 rounded-full"
             style={{ 
-              background: `conic-gradient(#3498db ${getProgressPercentage()}%, #ecf0f1 ${getProgressPercentage()}%)` 
+              background: `conic-gradient(#8B4513 ${getProgressPercentage()}%, #ecf0f1 ${getProgressPercentage()}%)` 
             }}
           />
           <div className="relative bg-white w-40 h-40 rounded-full flex flex-col items-center justify-center shadow-lg">
@@ -164,7 +164,7 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
       </div>
 
       {currentTask && (
-        <div className="bg-blue-50 rounded-xl p-4 mb-6 text-left">
+        <div className="bg-amber-50 rounded-lg p-4 mb-6 text-left border border-amber-200">
           <h4 className="text-sm font-medium text-gray-600 mb-2">Current Task:</h4>
           <p className="font-semibold text-gray-800">{currentTask.title}</p>
           {currentTask.description && (
@@ -173,7 +173,7 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
         </div>
       )}
 
-      <div className="flex justify-around mb-6 bg-gray-50 rounded-xl p-4">
+      <div className="flex justify-around mb-6 bg-gray-50 rounded-lg p-4 border border-gray-200">
         <div className="text-center">
           <div className="text-xs text-gray-600 mb-1">Sessions</div>
           <div className="text-xl font-semibold text-gray-800">{sessions}</div>
@@ -191,7 +191,7 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
           <button
             onClick={handleStart}
             disabled={!currentTask}
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg font-medium"
+            className="px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg font-medium"
           >
             {currentTask ? '▶️ Start Timer' : 'Select a task to start'}
           </button>
@@ -200,14 +200,14 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
             {isPaused ? (
               <button 
                 onClick={handleResume}
-                className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+                className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors"
               >
                 ▶️ Resume
               </button>
             ) : (
               <button 
                 onClick={handlePause}
-                className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors"
+                className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
               >
                 ⏸️ Pause
               </button>
@@ -220,7 +220,7 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
             </button>
             <button 
               onClick={handleSkip}
-              className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
+              className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors"
             >
               ⏭️ Skip
             </button>
@@ -228,7 +228,7 @@ const PomodoroTimer = ({ currentTask, isRunning, onStart, onStop }) => {
         )}
       </div>
 
-      <div className="bg-gray-50 rounded-xl p-4 text-sm text-gray-600">
+      <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-600 border border-gray-200">
         <p className="mb-2">
           <strong>Work Session:</strong> 25 minutes | <strong>Break:</strong> 5 minutes
         </p>
