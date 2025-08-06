@@ -1,0 +1,17 @@
+/* Custom styles for the app */
+.app {
+  @apply min-h-screen bg-gradient-to-br from-blue-500 to-purple-600;
+}
+
+.app-container {
+  @apply container mx-auto px-4 py-8;
+}
+
+.main-content {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
+}
+
+/* Ensure both sections have equal width */
+.main-content > div {
+  @apply w-full;
+}
