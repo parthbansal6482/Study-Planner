@@ -45,11 +45,11 @@ const TaskColumn = ({
 
   return (
     <div
-      className="bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[400px]"
+      className="bg-gradient-to-br from-white via-amber-50 to-white rounded-xl p-3 shadow-2xl border-2 border-amber-800 hover:shadow-[0_8px_32px_rgba(0,0,0,0.25)] transition-all duration-200 min-h-[400px] hover:-translate-y-1"
       onDrop={handleDrop}
       onDragOver={handleDragOver}
     >
-      <div className="border-b-2 pb-2 mb-3" style={{ borderColor: color }}>
+      <div className="border-b-2 border-amber-600 pb-2 mb-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl">{icon}</span>

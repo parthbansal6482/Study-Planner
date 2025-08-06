@@ -51,9 +51,9 @@ const TaskCard = ({
 
   return (
     <div
-      className={`bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-all duration-300 cursor-grab border-2 ${
-        isCurrentTask ? 'border-blue-500 bg-blue-50' : 'border-transparent'
-      }`}
+      className={`bg-gradient-to-br from-white via-amber-50 to-white rounded-xl p-3 shadow-2xl hover:shadow-[0_8px_32px_rgba(0,0,0,0.25)] transition-all duration-200 cursor-grab border-2 ${
+        isCurrentTask ? 'border-amber-600 bg-amber-50' : 'border-gray-200 hover:border-amber-300'
+      } hover:-translate-y-1`}
       draggable
       onDragStart={handleDragStart}
       onMouseEnter={() => setShowActions(true)}
@@ -105,7 +105,7 @@ const TaskCard = ({
               className={`px-2 py-1 text-xs rounded transition-colors ${
                 isCurrentTask
                   ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                  : 'bg-blue-500 text-white hover:bg-blue-600'
+                  : 'bg-gray-700 text-white hover:bg-gray-800'
               }`}
             >
               {isCurrentTask ? '⏱️ Running' : '▶️ Start'}

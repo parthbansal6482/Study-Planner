@@ -1,6 +1,6 @@
 /* Custom styles for the app */
 .app {
-  @apply min-h-screen bg-gradient-to-br from-blue-500 to-purple-600;
+  @apply min-h-screen bg-white;
 }
 
 .app-container {

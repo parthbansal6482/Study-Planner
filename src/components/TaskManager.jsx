@@ -58,13 +58,13 @@ const TaskManager = ({
   };
 
   return (
-    <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
+    <div className="bg-gradient-to-br from-white via-amber-50 to-white rounded-xl p-6 shadow-2xl border-2 border-amber-800 transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Task Management</h2>
         <button
           onClick={() => setShowTaskForm(true)}
           disabled={showTaskForm}
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+          className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
         >
           <span className="text-lg">+</span>
           Add Task
