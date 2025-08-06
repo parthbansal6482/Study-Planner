@@ -58,7 +58,7 @@ Built with React and Tailwind CSS, featuring a beautiful 3D card interface and a
 
 ## 📸 Screenshots
 
-> _Add screenshots here to showcase the UI and 3D effects!_
+![Study Planner Screenshot](./screenshot.png)
 
 ---
 
@@ -69,12 +69,6 @@ Built with React and Tailwind CSS, featuring a beautiful 3D card interface and a
 
 - **Pomodoro Settings:**  
   Change work/break durations in `PomodoroTimer.jsx` if you want custom intervals.
-
----
-
-## 📄 License
-
-MIT License
 
 ---
 
